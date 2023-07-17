@@ -2,13 +2,13 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testPathIgnorePatterns: ['/node_modules/', '/lib/', 'cypress'],
-  globals: {
-    'ts-jest': {
+  transform: {
+    '^.+\\.{ts|tsx}?$': ['ts-jest', {
       tsconfig: {
         esModuleInterop: true,
         downlevelIteration: false,
       },
-    },
+    }],
   },
   /* TODO: Update to latest Jest snapshotFormat
    * By default Nx has kept the older style of Jest Snapshot formats

@@ -21,7 +21,8 @@
     "noStrictGenericChecks": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "esModuleInterop": true
   },
   "exclude": ["cypress"]
 }
